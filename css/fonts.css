@@ -1,0 +1,11 @@
+/* font-family: NunitoSans */
+@font-face {
+    font-family: NunitoSans;
+    src: url('../fonts/NunitoSans/NunitoSans-Regular.ttf');
+}
+
+/* font-family: Hind Siliguri */
+@font-face {
+    font-family: HindSiliguri;
+    src: url('../fonts/HindSiliguri/HindSiliguri-Regular.ttf');
+}
