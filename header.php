@@ -5,16 +5,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Patrimonio cultural inmaterial</title>
+    <!-- Archivos de bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+
     <!-- Íconos de Font Awesome -->
     <link rel="stylesheet" href="./css/all.css">
+
     <!-- Owl-Carousel -->
     <link rel="stylesheet" href="./css/owl.carousel.min.css">
     <link rel="stylesheet" href="./css/owl.theme.default.min.css">
+
+    <!-- Librería AOS -->
+    <link rel="stylesheet" href="./css/aos.css">
+
     <!-- Estilos personalizados -->
     <link rel="stylesheet" href="./css/style.css">
+
     <!-- Archivo de librería JQuery -->
     <script src="./js/jquery.min.js"></script>
     <script src="./js/owl.carousel.min.js"></script>
+
+    <!-- Archivos de librería bootstrap -->
+
+
+    <!-- Librería js AOS -->
+    <script src="./js/aos.js"></script>
+
     <!-- Archivo javascript personalizado -->
     <script src="./js/main.js"></script>
     <style>
@@ -82,7 +102,7 @@
             cursor: pointer;
         }
 
-        span {
+        p {
             font-family: var(--NunitoSans);
         }
 
@@ -223,16 +243,19 @@
         } */
 
         main .impacto .impacto-post {
-            padding-top: 6rem;
+            padding-top: 4rem;
         }
 
         main .impacto-post .impacto-content {
             display: flex;
             flex-direction: column;
-            text-align: center;
             width: 80%;
             margin: 3rem 2rem;
             box-shadow: 0 15px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        main .impacto-post .impacto-content h3 {
+            text-align: center;
         }
 
         main .impacto-content .impacto-title {
@@ -271,6 +294,18 @@
         /* ----------x---------------Tarjetas de impacto----------x-------- */
 
         /* ------------------Contenido de la página------------------- */
+
+        .site-content>.sidebar .category-list .list-items {
+            padding: .4rem 1rem;
+            margin: .8rem 0;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .site-content>.sidebar .category {
+            text-align: center;
+        }
 
         main .site-content {
             display: grid;
@@ -316,66 +351,89 @@
 
         /* -----------x---------Contenido principal------------x--------------- */
 
-         /* ------------------------Footer------------------------------- */
+        /* ------------------------Footer------------------------------- */
 
-         footer.footer {
-             height: 100%;
-             background: var(--bg-color);
-             position: relative;
-         }
+        footer.footer {
+            height: 100%;
+            background: var(--bg-color);
+            position: relative;
+        }
 
-         footer.footer .container {
-             display: grid;
-             grid-template-columns: repeat(4, 1fr);
-         }
+        footer.footer .container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+        }
 
-         footer.footer .container > div {
-             flex-grow: 1;
-             flex-basis: 0;
-             padding: 3rem .9rem;
-         }
+        footer.footer .container>div {
+            flex-grow: 1;
+            flex-basis: 0;
+            padding: 3rem .9rem;
+        }
 
-         footer.footer .container .about-us h2 {
-             color: var(--white);
-         }
+        footer.footer .container h2 {
+            color: var(--white);
+        }
 
-         footer.footer .impacto-footer div > img {
-             display: inline-block;
-             width: 25%;
-             height: 50%;
-             margin: .3rem .4rem;
-         }
+        footer.footer .container p {
+            color: var(--text-gray);
+            font-family: var(--NunitoSans);
+        }
 
-         footer.footer .follow div i {
-                color: var(--white);
-                padding: 0 .4rem;
-         }
+        footer.footer .impacto-footer div>img {
+            display: inline-block;
+            width: 25%;
+            height: 50%;
+            margin: .3rem .4rem;
+        }
 
-         footer.footer .rights {
+        footer.footer .follow div i {
+            color: var(--white);
+            padding: 0 .4rem;
+        }
+
+        footer.footer .rights {
             justify-content: center;
             font-family: var(--NunitoSans);
-         }
+        }
 
-         footer.footer .rights h4 a {
-             color: var(--white);
-         }
+        footer.footer .rights h4 a {
+            color: var(--white);
+        }
 
-         footer.footer .move-up {
-             position: absolute;
-             right: 6%;
-             top: 50%;
-         }
+        footer.footer .move-up {
+            position: absolute;
+            right: 6%;
+            top: 50%;
+        }
 
-         footer.footer .move-up span {
-             color: var(--midnight);
-         }
+        footer.footer .move-up span {
+            color: var(--midnight);
+        }
 
-         footer.footer .move-up span:hover {
-             color: var(--white);
-             cursor: pointer;
-         }
+        footer.footer .move-up span:hover {
+            color: var(--white);
+            cursor: pointer;
+        }
 
         /* ---------------x---------Footer----------------x-------------- */
+
+        /* -----------------Ventana gráfica menor o igual a 1130px --------------------*/
+
+        @media only screen and (max-width: 1130px) {
+            .site-content .post-content>.post-image {
+                left: 2rem !important;
+                bottom: 1.2rem !important;
+                border-radius: 0% !important;
+            }
+
+
+
+            footer.footer .container {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        /* ---------x--------Ventana gráfica menor o igual a 1130px ------------x------*/
 
         /* -----------------Ventana gráfica menor o igual a 750px --------------------*/
         @media only screen and (max-width:750px) {
@@ -388,9 +446,56 @@
             .nav .toggle-collapse {
                 display: initial;
             }
+
+            main .site-content {
+                grid-template-columns: 100%;
+            }
+
+            footer.footer .container {
+                grid-template-columns: repeat(1, 1fr);
+            }
         }
 
-        /* ---------x--------Ventana gráfica menor o igual a 750px ------------x------*/
+        /* ---------x--------Ventana gráfica menor o igual a 520px ------------x------*/
+
+        /* ------------------Ventana gráfica menor o igual a 520px -------------------*/
+
+        @media only screen and (max-width:520px) {
+            main .site-title {
+                align-content: flex-end;
+            }
+
+            .site-content .post-content>.post-image {
+                margin-right: 3rem;
+            }
+
+            main .impacto {
+                height: 125vh;
+                padding-bottom: 1rem;
+            }
+
+            footer.footer .container>div {
+                padding: 1rem .9rem !important;
+            }
+
+            footer .rights {
+                padding: 0 1.4rem;
+                text-align: center;
+            }
+
+            nav .toggle-collapse {
+                width: 80% !important;
+            }
+        }
+
+        /* ---------x--------Ventana gráfica menor o igual a 520px ------------x------*/
+
+
+
+        /* Formularios */
+            #second, #third, #fourth, #fifth, #sixth, #seventh, #result {
+                display: none;
+            }
     </style>
 </head>
 
@@ -435,3 +540,6 @@
         </div>
     </nav>
     <!-- -----------x---------------- Barra de navegación ----------------x----------- -->
+
+    <body>
+        
